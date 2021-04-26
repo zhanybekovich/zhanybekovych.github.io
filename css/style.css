@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Cabin', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  line-height: 1.857;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* HEADER */
+.header {
+  height: 100vh;
+  color: #fff;
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, .6);
+  background-blend-mode: multiply
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  padding-top: 45px;
+}
+
+.header__content {
+  max-width: 595px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header__img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.083;
+}
+
+.header__text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+.logo__link {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo__link span {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.social-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.social-links__item+.social-links__item {
+  margin-left: 20px;
+}
+
+.social-links__link path {
+  fill: #fff;
+}
